@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/cursosbranco.ico" type="image/x-icon">
+    <title>Básico</title>
+</head>
+
+<body>
+    <h1>Básico de JavaScript</h1>
+
+    <ol>
+        <li>Ponto e vírgula ao final das linhas é opcional</li>
+        <li>Variáveis não precisam ter seu tipo definido no momento de sua declaração</li>
+        <li>O JS considera a variável como string autometicamente. Deve-se fazer a conversão para os demais formatos. A saber:</li>
+        <ol>
+            <li>Para número é possível utilizar "Number.parseInt()", "Number.parseFloat()" ou simplesmente "Number()" (neste último, o JS identifica automaticamente o tipo de número utilizado.</li>
+            <li>Também é possível converter sem utilizar o início Number, somente com "parseInt()".</li>
+            <li>Para converter a string, pode-se utilizar "String()" ou "variavel.toString()"</li>
+        </ol>
+        <li>Window.alert faz aparecer um pop-up na tela.</li>
+        <li>Window.prompt faz aparecer um pop-up que precisa ser preenchido na tela.</li>
+        <li>variavel.length (atributo, não tem parênteses ao final: informa quantos caracteres a string tem.</li>
+        <li>variavel.toUpprtCase(): transforma as letras em maíusculas.</li>
+        <li>variavel.toLowerCase(): transforma as letras em minúsculas.</li>
+        <br>
+        <h2>Tipos de comando</h2>
+        <p>Existem diferentes tipos de comando para juntar o que se quer dizer e o valor das variáveis.</p>
+        <ol>
+            <li>É possível fazer utilizando concatenação: <code>"Obrigado por se registrar" + nome "!"</code></li>
+            <li>Também é possível fazer a mesma coisa utilizando Template String (que deve ser escrito entre crases e a variável fica dentro de um place holder (${})): `Obrigado por se registrar ${nome}!`</li>
+        </ol>
+    </ol>
+
+    <h2>Operadores</h2>
+
+    <ul>Aritméticos 
+        <li>Mais: +</li>
+        <li>Menos: -</li>
+        <li>Vezes: *</li>
+        <li>Dividido: /</li>
+        <li>Resto da divisão: %</li>
+        <li>Potência: **</li>
+    </ul>
+
+    <ul>De atribuição
+        <li>Atribuição simples/recebe: =</li>
+        <li>Auto-atribuição: variável recebe o valor dela mesmo com alguma operação: += | -= | *= | /= | **= | %=</li>
+    </ul>
+
+    <ul>Relacionais
+        <li>5 == 5 -> True</li>
+        <li>5 == '5' -> JS considera true, porque o sinal de igualdade não testa o tipo</li>
+        <li>5 === '5' -> False. 3 iguais avalia se é identico, então leva em conta o tipo.</li>
+        <li>Desigual restrito: !==, leva em conta o tipo</li>
+    </ul>
+
+    <ul>Lógicos
+        <li>Negação: ! -> operador unário, após ele se coloca true, false ou uma expressão que retorne algum desses valores</li>
+        <li>Conjunção (e): && -> operador binário, tem 2 condições e segue a lógica</li>
+        <li>Disjunção (ou): || -> operador binário, tem 2 condições e segue a lógica</li>
+        <li>Operadores lógicos têm ordem de precedência: não (!), e (&&), ou(||)</li>
+    </ul>
+
+    <ul>Ternário
+        <li>teste ? true : false -> tem 3 partes. Há um teste lógico, se o resultado do teste for verdadeiro, aparecerá o que está ao lado do "?", se for falso, após o "":". <br> Exemplo: média >= 7.0 ? "Aprovado" : "Reprovado"</li>
+    </ul>
+
+    <h2>O que é DOM?</h2>
+    <p>Document Object Model - facilitador dentro do navegador e do HTML5 para dar acesso aos elementos dentro do JS. Sem ele, haveria muita dificuldade para acessar elementos da página. </p>
+    <p> InnerText -> texto que está dentro do texto, sem formatação</p>
+    <p> InnerHTML -> pega toda a formatação e p texto</p>
+    <h3>Query Selector</h3>
+    <p>ID/div é representada por "#" e classe por um ponto final "."</p>
+    <p>Modo de usar: window.document.querySelector('div#id_do_item')</p>
+
+
+
+
+</body>
+</html>

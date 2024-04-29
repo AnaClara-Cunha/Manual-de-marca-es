@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/cursosbranco.ico" type="image/x-icon">
+    <title>Tags</title>
+</head>
+<body>
+    <h1>Tags e informações mais básicas</h1>
+    <ul>
+        <li>Títulos: &lt;h1&gt; a &lt;h6&gt;, a depender do nível</li>
+        <li>Parágrafos: &lt;p&gt;</li>
+        <li>Quebra de linha:&lt;br&gt;</li>
+        <li>Linha horizontal na página: &lt;hr&gt;</li>
+        <li>Comentários: &lt;!-- --&gt;</li>
+        <li>Símbolos: &+nome do símbolo. Exemplo: &reg (&+reg)</li>
+        <li>Emojis: &#x + número do emoji (pegar o código no emojipedia). Exemplo: &#x1F60A (&#x + U+1F60A, tirando o U+)</li>
+        <li>Tab + shift: dá o espaçamento que o Tab dá, mas para a esquerda, como recuo. Se selecionadas as linhas desejadas, é possível recuar todas de uma vez.</li>
+        <li>Para fazer uma pesquisa de ferramentas/abrir um atalho no VS Code, basta clicar: CTRL + SHIFT + P. Para adicionar as tags sem precisar de escrever no texto, basta marcar a parte desejada, digitar o comando anterior e pesquisar por ABB ("envolver com abreviação"), depois digitar a tag sem os símbolos maior e menor que.</li>
+        <li>DICA: Para selecionar e escrever em diferentes lugares ao mesmo tempo, utilizar ALT. Só pressionar a tecla e selecionar os lugares desejados.</li>
+    </ul>
+
+    <h1>Principais formatações</h1>
+    <ul>
+        <li>Negrito/Destaque:
+            <ul>
+                <li>Forma semântica: &lt;strong&gt;</li>
+                <li> Forma não semântica: &lt;b&gt;</li></li>
+            </ul>
+        <li>Itálico/Ênfase
+            <ul>
+                <li>Forma semântica: &lt;em&gt;</li>
+                <li> Forma não semântica: &lt;i&gt;</li></li>
+            </ul>
+        <li>Texto Marcado: &lt;mark&gt;</li>
+        <li>Texto Grande: &lt;big&gt; - <strong>OBSOLETO*</strong><br>
+            *Tags que ficam vermelhas, como a &lt;center&gt;e &lt;bug&gt; não devem ser usadas! Estão obsoletas, apesar de funcionarem, ou seja, podem deixar de funcionar a qualquer momento.
+        </li>
+        <li>Texto Pequeno: &lt;small&gt; (não se enquadra como obsoleto, porque letras pequenas podem ser pequenas por questões além da forma, como as de um contrato)</li>
+        <li>Texto deletado: &lt;del&gt; <del>exemplo</del></li>
+        <li>Texto inserido: &lt;ins&gt; <ins>exemplo</ins> <br>Existe também o sublinhado com a tag &lt;u&gt;(não semântico).</li> 
+        <p></p>
+        <li>Texto Sobrescrito: &lt;sup&gt; <sup>exemplo</sup> </li>
+        <li>Texto Subscrito: &lt;sub&gt; <sub>exemplo</sub></li>
+        <li>Fonte monoespaçada: &lt;code&gt; <br>Exemplo: <code>Console.WriteLine("Olá, Mundo!");</code><br>
+            <ul>
+                <li>Para fazer um código com indentação: adicionar &lt;pre&gt; antes do &lt;code&gt;<br> 
+                    Exemplo:
+                    <pre>
+                        <code>
+                        num = int(input('Digite um número'))
+                        if num % 2 == 0;
+                                print(f'O número {num} é PAR')
+                        else:
+                                print(f 'O número {num} é IMPAR')
+                        print ('Fim do programa')
+                        </code>
+                    </pre>
+                </li>
+            </ul>
+        </li>
+        <li>Citações simples: &lt;pre&gt; (mesma linha). Exemplo: <q>Oi, como vai?</q></li>
+        <li>Citações grandes: &lt;bloquote&gt;. Exemplo: <bloquote>Ele disse vai, eu disse vou</bloquote> 
+        <br>É possível somente adicionar as aspas, mas colocar quote leva significado.</li>
+        <li>Abreviações: &lt;abbr&gt; (coloca o significado da abreviação na palavra, quando o cursor passa por ela no texto).<br>
+            Exemplo: <abbr title="Hypertext Markup Language">HTML</abbr>
+        </li>
+        <li>[Inútil] Texto invertido: &lt;bdo&gt; <br>
+            Exemplo: <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></li>
+    </ul>
+    <a href="index.html">Voltar para menu</a>
+</body>
+</html>

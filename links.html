@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/cursosbranco.ico" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <p>Usa-se <code>"&lt;a + href = ""&gt;&lt;/a&gt;"</code> para links em geral.</p>
+    <ul>
+       <li>Adiciona-se <code>"rel="prev"</code> após o href para indicar que o link volta para alguma página.</li>
+       <li>Adiciona-se <code>"rel="next"</code> após o href para indicar que o link segue para alguma página.</li>
+       <li>Adiciona-se <code>"rel="nofollow"</code> após o href para indicar que o link segue para alguma página que não deve ser indexada junto ao site. De alguém externo, como uma publicidade.</li>
+       <li>Adiciona-se <code>"target="_blank"</code> após o href se desejar que o link abra em outra página</li>
+       <li>Adiciona-se <code>"target="_self"</code> após o href se desejar que o link abra na mesma página</li>
+       <ul>
+          <li>Apesar de automático, adicionar o target facilita para os buscadores a identificação do conteúdo do seu site e a organização deste.</li>
+       </ul>
+    </ul>
+    <p>Links internos de outras pastas</p>
+    <ul>
+      <li>É preciso indicar a pasta: <code>&lt;href="pasta/nome_do_arquivo&gt;</code></li>
+      <li>Se for um item em uma pasta anterior à utilizada, deve-se usar <code>&lt;href="../arquivo.html"&gt;</code>.<br>
+      O "../" volta uma pasta.</li>
+    </ul>
+
+  <a href="index.html">Voltar para menu</a>
+    
+</body>
+</html>

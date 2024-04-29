@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/cursosbranco.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Mídias nos sites</h1>
+    <h2>Imagens</h2>
+      <ul>
+         <li>Maneira padrão: <code>&lt;img src="link interno ou externo" alt="descrição da imagem"&gt;</code></li>
+         <ul>
+            <li>Colocar o nome direto depois do scr, se a imagem estiver na mesma pasta. Se não estiver, colocar o direcionamento das pastas.Se for o link, só adicionar o link da imagem, após o src.
+            <li>Para adicionar favicon à página, deve-se escrever link e escolher a opção com Favicon, na header, acima de title.</li>
+         </ul>
+         <li>Utilizando &lt;picture&gt;, é possível adicionar diferentes imagens numa mesma lista. O navegador sempre vai ter uma imagem padrão (que preferencialmente será aberta).<br>
+            <ul>
+                <li><code>&lt;img src="caminho da imagem" alt="descrição da imagem"&gt;</code> para a principal</li>
+                <li><code>&lt;source media = (max/min-width/height = Ypx) srcset="caminho da imagem" type="tipo padrão"&gt;</code> para as que serão usadas em situações que fogem do padrão.
+                </li>
+            </ul>
+        </li>
+      </ul>
+      <p>Importante: Sempre colocar em ordem. Se a imagem padrão for a menor, deve-se ordenar, no código, acima dela, a média e a grande. Se a imagem padrão for a maior, deve-se ordenar, acima dela, a média e a pequena. Assim, o navegador vai escolher a imagem de acordo com as condições e pode-se utilizar uma imagem menor para uma tela mobile, por exemplo.</p>
+    
+    <h2>Áudios</h2>
+    <ul>
+        <li>Forma simples: <code>&lt;audio src="caminho do áudio" controls (faz aparecer o player) autoplay (opcional)&gt;</code></li>
+        <li>Forma mais detalhada, trabalhando com diferentes formatos do mesmo áudio para melhor compatibilidade com navegadores:
+        <pre>
+            <code>
+                &lt;audio preload="metadado/nano/auto" autoplay (opcional) controls loop (opcional)&gt;
+                    &lt;source src="caminho do áudio" type="tipos"&gt;<br>
+            </code>
+        </pre>
+        </li>    
+    </ul>
+
+    <h3>Informações sobre áudios</h3>
+    <ul>
+        <li>Formatos que devem ser levados em consideração: MP3 WAV(arquivos muito pesados) e OGG.</li>
+        <li>A ordem dos sources é a ordem que o navegador vai procurar para abrir o áudio. Começando pelo primeiro e indo até  último, se não tiver compatibilidade com os demais formatos. Normalmente é adicionada uma mensagem final avisando a incompatibilidade para o usuário.</li>
+        <li>Tipos para colocar após o type: "audio/ogg" (ogg), "audio/wav" (wav) e "audio/mpeg" (mp3).</li>
+        <li>Preload pode ser:</li>
+        <ul>
+            <li>Auto: considera que a página só carrega quando o áudio inteiro carrega</li>
+            <li>Metadado: carrega só o tempo do áudio e a aparência dele, mas ele só carrega de fato quando o usuário clica</li>
+            <li>None: não carrega qualquer informação até o usuário clicar</li>
+        </ul>
+        <li>Loop: faz o áudio tocar em looping, uma vez que ele acabe.</li>
+    </ul>
+
+    <h2>Vídeos</h2>
+    <ul>
+        <li>Vídeos hospedados localmente: <code>&lt;video src="caminho do vídeo" controls(para mostrar o player)&gt;</code>
+        <li>Vídeos de outros locais: compartilhar o vídeo e ir na opção "incorporar". Sites como o Youtube já oferecem o código inteiro e personalizações. Basta transcrevê-lo.</li>
+    </ul>
+
+    <h3>Informações sobre vídeos</h3>
+    <ul>
+        <li>Formatos que devem ser levados em consideração: MP4 (.mp4 e .m4v) WebM(bem pequenos, mas qualidade sofrível) e OGV</li>
+        <li>Assim como em áudios, pode-se adicionar opções. Colocar do formato mais leve ao mais pesado. O navegador seguirá a ordem colocada, indo até a mensagem final de incompatibilidade com vídeo, se ela for adicionada ao código.</li>
+        <li>É possível dar altura ou largura máxima ao vídeo, adicionando <code>width="tamanho"</code>, mas o tamanho real não é alterado. 
+        <li>É possível adicionar uma thumbnail colocando <code>poster="caminho da imagem".</code></li>
+        <li>Exemplo com controle de tamanho e adição de thumbnail: <code>&lt;video width="tamnho" poster="caminho da imagem" controls&gt;</code></li>
+    </ul>
+
+    <a href="index.html">Voltar para menu</a>
+</body>
+</html>
